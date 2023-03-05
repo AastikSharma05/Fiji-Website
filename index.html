@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiji</title>
+
+    <style>
+        html, body{
+            padding: 0;
+            margin: 0;
+        }
+        .landing{
+            background-image:  url("beach1.jpg");
+            height: 800px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* position: fixed;
+            top: 0;
+            width: 100%; */
+
+
+        }
+
+        .nav{
+            display: inline-block;
+            margin: 0 300px;
+            
+        }
+        .home,.about,.fiji,.portfolio,.contact{
+            display: inline-block;
+            margin: 10px 50px;
+            color: #fff;
+        }
+        .fiji{
+            font-style: bold;
+            font-size: 45px;
+        }
+
+        .middle{
+            width: 40%;
+            color: #fff;
+            margin: 10% 35%;
+            
+        }
+        .middle-title{
+            letter-spacing: 6px;
+            font-size: 60px;
+            margin: 0;
+        }
+
+        .middle p{
+         
+            padding-left: 80px;
+            margin: 0;
+        }
+
+        .box{
+            
+            position: relative;
+            height: 600px;
+        }
+        .box-inner{
+            
+            position: absolute;
+            height: 400px;
+            width: 750px;
+            top: 100px;
+            left: 350px;
+            background-color: #F0F0F0;
+            padding-top: 60px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            border-top-width: 0px;
+            border-bottom-width: 0px;
+            border-right-width: 0px;
+            border-left-width: 0px;
+            padding-left: 100px;
+
+        }
+
+        .box-inner img{
+            /* position: absolute;
+            height: 300px;
+            top: 50px;
+            left: 100px; */
+            float: left;
+            height: 300px;
+            margin-right: 60px;
+            
+        }
+        .box-inner h1{
+            display: inline-block;
+            max-width: 300px;
+            margin-left: 50px;
+            margin-top: 50px;
+            
+            text-align: center;
+        }
+        .box-inner p{
+            text-align: center;
+            margin-left: 50px;
+            display: inline-block;
+            max-width: 300px;
+        }
+
+        .heading{
+            text-align: center;
+            color: black;letter-spacing: 3px;
+            font-size: 45px;
+            margin: 20px auto;
+        }
+        .grid-container{
+            
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin: 30px 150px;
+        }
+        
+        .item1,.item2,.item11,.item12{
+            height: 225px;
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+           
+            
+        }
+        .item3,.item5{
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+           
+        }
+
+        .item1{
+            background-image: url("about.jpg");
+        }
+        .item2{
+            background-image: url("blog.jpg");
+        }
+        .item3{
+           
+            background-image: url("contact.jpg");
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            height: 325px;
+            }
+        .item5{
+            
+            background-image: url("faq.jpg");
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            height: 325px;
+             }
+        .item11{
+            background-image: url("investment.jpg");
+           
+            }
+        .item12{
+            background-image: url("print.jpg");
+            }
+
+        .grid-item-inner h1{
+            margin: 0;
+            padding: 25%;
+        }
+        .grid-item-inner{
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            text-align: center;
+            
+            /* opacity: 0.5; */
+        }
+
+
+.container{
+    margin-bottom: 100px;
+}
+        
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="landing">
+        <div class="nav">
+            <ul>
+                <div class="home">Home</div>
+                <div class="about">About</div>
+                <div class="fiji">F I J I</div>
+                <div class="portfolio">Portfolio</div>
+                <div class="contact">Contact</div>
+            </ul>
+        </div>
+        <div class="middle">
+            <h1 class="middle-title">WE LOVE FIJI</h1>
+           <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="box-inner">
+            <img src="second.jpg" alt="">
+            <h1>Fact #1: I am surfer!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorum, aliquid dolores veniam consequatur eligendi beatae autem necessitatibus molestiae ad eaque </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="heading">
+            WORK OVERVIEW
+        </div>
+        <div class="grid-container">
+            <div class="grid-item item1">
+                <div class="grid-item-inner">
+                    <h1>
+                        About
+                    </h1>
+                </div>
+            </div>
+            <div class="grid-item item2">
+                <div class="grid-item-inner">
+                    <h1>
+                        Blogs
+                    </h1>
+                </div>
+            </div>
+            <div class="grid-item item3">
+                <div class="grid-item-inner">
+                    <h1>
+                        Contact
+                    </h1>
+                </div>
+            </div>
+            <div class="grid-item item5">
+                <div class="grid-item-inner">
+                    <h1>
+                        Investments
+                    </h1>
+                </div>
+            </div>
+            <div class="grid-item item11">
+                <div class="grid-item-inner">
+                   <h1>
+                        FAQ
+                    </h1>
+                </div>
+            </div>
+            <div class="grid-item item12">
+                <div class="grid-item-inner">
+                    <h1>
+                        Prints
+                    </h1>
+                </div>
+            </div>
+          </div>
+    </div>
+    </body>
+</html>
